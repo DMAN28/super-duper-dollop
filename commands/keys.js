@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const colors = require('colors');
 const KeyManager = require ('../lib/KeyManger');
+const {isRequired} = require('../utils/validation');
 
 const key = {
    async set () {
@@ -16,10 +17,30 @@ const key = {
         const key = keyManager.setKey(input.key);
     },
     show(){
-        console.log('HODl show'.blue);
+        try {
+            const KeyManager = new KeyManager();
+            const key = keyManager.getKey();
+
+            console.log ('Current API key', key.yellow);
+
+            return key; 
+        } catch (err){
+            console.log (err.message.red);
+        }
     },
+        //console.log('HODl show'.blue);
+   
     remove(){
-        console.log('HODl remove');
+        try {
+            const KeyManager = new KeyManager();
+            const key = deleteKey();
+
+            console.log ('Key Removed' .blue);
+
+            return key; 
+        } catch (err){
+            console.log (err.message.red);
+        }
     }
 }
 

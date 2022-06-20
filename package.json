@@ -1,0 +1,28 @@
+{
+  "name": "super-duper-dollop",
+  "version": "1.0.0",
+  "description": "CLI app to check crypto prices",
+  "main": "index.js",
+  "bin": "./bin/coinz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMAN28/super-duper-dollop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMAN28/super-duper-dollop/issues"
+  },
+  "homepage": "https://github.com/DMAN28/super-duper-dollop#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0",
+    "commander": "^9.3.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^8.2.4"
+  }
+}

@@ -1,6 +1,7 @@
+
 const check = {
-    price () {
-        console.log ('Hello fellow HODLER')
+    price (cmd) {
+        //console.log (cmd.coin, cmd.cur)
     }
 };
 

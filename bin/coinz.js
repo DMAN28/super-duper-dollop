@@ -10,5 +10,5 @@ program
  .command('check', 'Check coin price')
  .parse(process.argv);
 
-console.log('hello crypto fam')
+//console.log('hello crypto fam')
 
